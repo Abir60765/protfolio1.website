@@ -1,0 +1,607 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+
+#header{
+    width: 100%;
+   height: 100vh;
+background: url("YWdTQe.webp");
+object-fit: cover;
+
+}
+
+#nav{
+    
+    display: flex;
+    width: 100%;
+    height: 10vh;
+}
+.logo{
+    font-size: 45px;
+    color: goldenrod;
+    font-family: cursive;
+    margin-left: 20px;
+}
+.logo:hover{
+    color: aliceblue;
+    transition: 1s;
+}
+
+
+
+.icon{
+    width: 55%;
+}
+.link{
+    margin-top: 5px;
+    width:45%;
+}
+.link ul li{
+    width: 55px;
+    display: inline-block;
+    margin: 0px 25px;
+    color: aliceblue;
+    font-size: 18px;
+    position: relative;
+}
+
+
+
+.link ul li::after{
+    content: " ";
+    width: 0%;
+    height: 5px;
+    background-color: brown;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.link ul li:hover::after{
+    width: 50%;
+    transition: 1s;
+}
+.link ul input{
+    height: 25px;
+    border: 2px solid salmon;
+    border-radius: 15px;
+}
+.link ul input:hover{
+    border: 2px solid peru;
+    background-color: aqua;
+    color: aliceblue;
+    transition: 1s;
+}
+.link ul input::placeholder{
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.link ul input:hover::placeholder{
+    color: aliceblue;
+    transition: 1s;
+}
+.link ul i{
+    
+    font-size: 20px;
+    color: aliceblue;
+    margin: 0px 10px;
+}
+.secondpart{
+width: 100%;
+height: 80vh;
+position: relative;
+}
+.textcontent{
+width: 50%;
+height: 65vh;
+position: absolute;
+top: 5%;
+/* bottom: 40%; */
+margin:  0px 0px 0px  15px;
+}
+.textcontent h1,h3,p{
+    margin:  20px 0px 0px  15px;
+}
+.textcontent .span{
+    width: 60px;
+    font-size: 50px;
+    color: pink;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+
+}
+.textcontent .span::after{
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0px;
+    height: 5px;
+    background-color: whitesmoke;
+    transition: 5s;
+}
+.textcontent .span:hover::after{
+    width: 100%;
+   
+
+}
+.textcontent h1{
+    text-transform: uppercase;
+    color: aliceblue;
+}
+.textcontent h2{
+    font-size: 35px;
+    margin-left: 15px;
+}
+.textcontent .text{
+    background-color: green;
+    display: inline-block;
+   
+    border: 2px solid black;
+    color: bisque;
+
+}
+.textcontent .none{
+    display: none;
+}
+
+/* .textcontent .text:hover{
+    background-color: aqua;
+    transition: 2s;
+   
+} */
+/* .textcontent .text1{
+    display: none;
+}
+.textcontent .text1:hover{
+    display: block;
+} */
+.textcontent p{
+    line-height: 30px;
+    font-size: 22px;
+    color: antiquewhite;
+}
+.click{
+    height: 15vh;
+    position: relative;
+}
+.textcontent .button{
+    width: 80px;
+    height: 38px;
+    border: 2px solid blue;
+    font-weight: bolder;
+   text-transform: uppercase;
+    font-size: 18px;
+    position: absolute;
+    left: 50%;
+    bottom: 45%;
+}
+.textcontent .button:hover{
+    background-color: green;
+    transition: 1s;
+}
+.textcontent button{
+    width: 100px;
+    height: 38px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 18px;
+    border: 2px solid black;
+    position: absolute;
+    left: 60%;
+    bottom: 45%;
+}
+.textcontent button:hover{
+    background-color: red;
+    transition: 1s;
+}
+.imgcontent{
+    width: 50%;
+
+}
+.mainimg{
+    width: 400px;
+    height: 600px;
+    background-color: purple;
+    border-radius: 15px;
+    position: absolute;
+    right: 10%;
+    top: 15%;
+}
+.imgcontent img{
+    width: 400px;
+    position: absolute;
+    top: 25%;
+    right: 10%;
+    border-radius: 15px;
+}
+.imgcontent img:hover{
+    transform: translate(100px, -165px);
+    animation-timing-function: linear;
+    transition: 5s;
+}
+
+ #lol{
+    position: absolute;
+    right: -45px;
+
+}
+ #ab{
+    position: absolute;
+    right: -45px;
+}
+
+section{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    background-color: gray;
+    opacity: .8;
+    margin-top: 10px;
+}
+
+.about{
+
+    width: 100%;
+    height: 30px;
+    
+    color: chocolate;
+    background-color: plum;
+
+    padding-bottom: 10px;
+    
+}
+.about h1{
+    text-align: center;
+}
+.about .h1{
+    display: inline;
+    border-bottom: 2px solid gray;
+    color: antiquewhite;
+}
+
+.sec1{
+    width: 50%;
+   height: 100%;
+   display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.sec2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+  
+.sec2 .first, .sec2 .second{
+    font-size: 28px;
+    line-height: 35px;
+    color: aliceblue;
+}
+
+.sec1 img{
+    width: 350px;
+    border-radius: 50%;
+    margin-left: 50px;
+   
+    
+}
+
+.section{
+    width: 100%;
+    height: 70vh;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+   
+    align-items: center;
+}
+.about{
+    width: 100%;
+    height: 4vh;
+    text-align: end;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.bio{
+    width: 50%;
+   
+}
+.info{
+    width: 50%;
+    text-align: start;
+   
+}
+.info .data h1{
+    margin-left: 22px;
+    width: 100%;
+    background-color: brown;
+   position: relative;
+    color: beige;
+    padding: 20px 0px;
+  text-align: center;
+
+}
+.info .data h1::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 10px;
+    background-color: white;
+    transition: 5s;
+}
+.info .data .A:hover::after{
+    width: 60%;
+    height: 10px;
+   
+}
+.info .data .B:hover::after{
+    width: 80%;
+    height: 10px;
+   
+}
+.info .data .C:hover::after{
+    width: 70%;
+    height: 10px;
+   
+}
+.info .data .D:hover::after{
+    width: 85%;
+    height: 10px;
+   
+}
+.info .data .E:hover::after{
+    width: 60%;
+    height: 10px;
+   
+}
+
+
+
+
+@media screen and (max-width:1000px) {
+    body{
+        overflow-x: hidden;
+    }
+    #header{
+        width: 100%;
+       height: 80vh;
+    background: url("YWdTQe.webp");
+    object-fit: cover;
+  
+    }
+
+    #nav{
+        width: 100%;
+        height: 17vh;
+        position: relative;
+    }
+    #nav .icon{
+        margin: 0;
+        width: 50%;
+       
+    }
+    #nav .logo{
+        font-size: 25px;
+        display: inline;
+    }
+  
+    #nav .link{
+        margin: 0;
+        position: absolute;
+        right: -470px;
+        width: 50%;
+        height: 21vh;
+        background-color: black;
+        border-radius: 10px;
+        opacity: .9;
+    }
+   #nav .link li{
+ 
+  
+        display: block;
+        margin-bottom: 13px;
+        font-size: 17px;
+        
+       
+    }
+    #nav .link input{
+      
+      
+        display: inline;
+        width: 180px;
+    }
+    #nav .link i{
+    display: inline;  
+    }
+
+    #nav .link i{
+    display: inline;  
+    }
+
+    #nav #ab{
+        display: block;
+        color: whitesmoke;
+        margin: 0;
+        position: absolute;
+        right: 25px;
+        top: 5px;
+        font-size: 25px;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    #nav #lol{
+        display: none;
+        color: whitesmoke;
+        margin: 0;
+        position: absolute;
+        right: 25px;
+        top: 5px;
+        font-size: 25px;
+        text-transform: uppercase;
+        z-index: 1;
+        cursor: pointer;
+    }
+
+    .secondpart{
+        width: 100%;
+        height: 63vh;
+        
+    }
+    .textcontent h1{
+       font-size: 35px;
+        display: block;
+       
+    }
+
+    .textcontent .span{
+        font-size: 25px;
+        
+     }
+     .textcontent .text{
+        font-size: 15px;
+        height: 25px;
+        display: none;
+       
+     }
+     .textcontent .none{
+        overflow: hidden;
+        height: 20px;
+        display: block;
+        font-size: 16px;
+        color: purple;
+        font-weight: bold;
+    }
+     .textcontent p{
+        height: 200px;
+       overflow-y: scroll;
+        font-size: 20px;
+        line-height: 25px;
+ 
+     }
+     .textcontent p::-webkit-scrollbar{
+        display: none;
+ 
+     }
+    .textcontent h2{
+        height: 20px;
+        display: inline;
+        font-size: 35px;
+    }
+    .textcontent .click{
+      position: relative;
+     width: 300px;
+     height: 100px;
+
+    }
+    .textcontent .click .button{
+        width: 60px;
+        font-size: 12px;
+        position: absolute;
+       top: 30px;
+       left: 30px;
+       
+
+     }
+     .textcontent .click button{
+        font-size: 12px;
+        position: absolute;
+        top: 30px;
+        left: 120px;
+        width: 70px;
+       
+     }
+    .imgcontent{
+        width: 35%;
+    }
+    .imgcontent .mainimg{
+        position: absolute;
+        top: 27%;
+        width: 150px;
+        height: 200px;
+    }
+
+    .imgcontent img{
+        width: 120px;
+        position: absolute;
+        top: 28%;
+    }
+    .imgcontent img:hover{
+        transform: translate(30px, -60px);
+        transition: 5s;
+    }
+    
+section{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    background-color: gray;
+    opacity: .8;
+    margin-top: 10px;
+    
+    
+}
+
+.about{
+
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    color: chocolate;
+    background-color: plum;
+    padding-bottom: 10px;
+    
+}
+.about .h1{
+    display: inline;
+    border-bottom: 2px solid gray;
+    color: antiquewhite;
+}
+
+.sec1{
+    width: 47%;
+   height: 100%;
+   display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+.sec2{
+    width: 53%;
+    margin-right: 15px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+  
+.sec2 .first, .sec2 .second{
+    font-size: 14px;
+    line-height: 17px;
+    color: aliceblue;
+}
+
+.sec1 img{
+    width: 150px;
+    border-radius: 50%;
+    margin-left: 50px;
+   
+    
+}
+.bio{
+    width: 50%;
+   text-align: center;
+}
+    
+}
